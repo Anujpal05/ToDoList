@@ -1,0 +1,127 @@
+* {
+    margin: 5px;
+}
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+body{
+    background-image: url("todolist.png");
+    background-size: cover;
+
+}
+
+
+th {
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(127, 178, 255);
+
+}
+
+td {
+    width: 25%;
+    height: 35px;
+    text-align: center;
+    background-color: rgb(235, 166, 254);
+}
+
+tbody div {
+    height: 30px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(74, 74, 250);
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+#title {
+    text-decoration: double underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.info {
+    padding-bottom: 30px;
+    border-bottom: 4px solid black;
+}
+
+button {
+    background-color: rgb(80, 80, 255);
+    border: 2px solid black;
+    font-size: 1.6rem;
+    position: relative;
+    left: 40%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todolist {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background:linear-gradient(to left,rgb(189, 189, 255),rgb(184, 184, 255),rgb(241, 192, 255));
+    height: 100vh;
+    width: 100vw;
+}
+
+input {
+    background-color: rgb(255, 237, 237);
+    border: 2px solid black;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    height: 5vh;
+    width: 90%;
+    padding: 5px;
+}
+
+@media screen and (max-width:500px) {
+    input {
+        background-color: rgb(255, 237, 237);
+        border: 2px solid black;
+        font-size: 1.6rem;
+        border-radius: 6px;
+        height: 3.9vh;
+        width: 90%;
+    }
+
+    button{
+        font-size: 1.5rem;
+        padding:7px;
+    }
+
+    tbody div{
+        width:13vw;
+    }
+}
+
+@media screen and (min-width:1000px){
+    #todolist {
+        width: 35vw;
+        position: absolute;
+        left:30vw;
+        border: 6px solid rgb(0, 0, 0);
+        box-shadow: 3px 3px 8px white;
+        border-radius: 20px;
+
+        
+    }
+
+}
